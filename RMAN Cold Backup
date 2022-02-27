@@ -1,0 +1,357 @@
+Initially if Database is not started and not connected to the RMAN target u will see only one background process as shown below 
+oracle     2667   2666  0 09:48 ?        00:00:00 oraclerdsdb19 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+
+Now connect to the database and start RMAN target now u will see Two background processes
+
+[oracle@rdsdbsrvr81 ~]$ . oraenv
+ORACLE_SID = [rdsdb19] ?
+The Oracle base remains unchanged with value /u01/app/oracle
+[oracle@rdsdbsrvr81 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Sat Feb 5 10:02:40 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+
+SQL> startup
+ORACLE instance started.
+
+Total System Global Area 1073737800 bytes
+Fixed Size                  8904776 bytes
+Variable Size             276824064 bytes
+Database Buffers          784334848 bytes
+Redo Buffers                3674112 bytes
+Database mounted.
+Database opened.
+SQL> select open_mode from v$database;
+
+OPEN_MODE
+--------------------
+READ WRITE
+
+
+SQL> select instance_name from v$instance;
+
+INSTANCE_NAME
+----------------
+rdsdb19
+
+SQL> conn / as sysdba
+Connected.
+SQL> show user
+USER is "SYS"
+
+[oracle@rdsdbsrvr81 ~]$ rman target /
+
+Recovery Manager: Release 19.0.0.0.0 - Production on Sat Feb 5 10:04:58 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: RDSDB19 (DBID=303417414)
+
+RMAN>
+
+
+
+[oracle@rdsdbsrvr81 ~]$  ps -ef|grep LOCAL=YES|grep rdsdb19
+oracle     3693   3686  0 10:04 ?        00:00:00 oraclerdsdb19 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle     3694   3686  0 10:04 ?        00:00:00 oraclerdsdb19 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+
+
+RMAN will connect to the database as SYS user             
+
+
+…………………………………………………………………………………………………………………………………………………………………………………..
+
+RMAN level COLD backup
+
+[oracle@rdsdbsrvr81 ~]$ . oraenv
+ORACLE_SID = [rdsdb19] ? rdsdb19
+The Oracle base remains unchanged with value /u01/app/oracle
+[oracle@rdsdbsrvr81 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Sat Feb 5 10:22:23 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+
+SQL> startup mount
+ORACLE instance started.
+
+Total System Global Area 1073737800 bytes
+Fixed Size                  8904776 bytes
+Variable Size             276824064 bytes
+Database Buffers          784334848 bytes
+Redo Buffers                3674112 bytes
+Database mounted.
+SQL> select open_mode from v$database;
+
+OPEN_MODE
+--------------------
+MOUNTED
+
+SQL> Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+[oracle@rdsdbsrvr81 ~]$ rman target /
+
+Recovery Manager: Release 19.0.0.0.0 - Production on Sat Feb 5 10:25:31 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: RDSDB19 (DBID=303417414, not open)
+
+RMAN> backup database include current controlfile;
+
+Starting backup at 05-FEB-22
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=45 device type=DISK
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00001 name=/oradata/rdsdb19/system01.dbf
+input datafile file number=00002 name=/oradata/rdsdb19/sysaux01.dbf
+input datafile file number=00003 name=/oradata/rdsdb19/undotbs01.dbf
+input datafile file number=00004 name=/oradata/rdsdb19/users01.dbf
+input datafile file number=00005 name=/oradata/rdsdb19/abcdata01.dbf
+input datafile file number=00006 name=/oradata/rdsdb19/pqrdata01.dbf
+input datafile file number=00007 name=/oradata/rdsdb19/pqrdata02.dbf
+input datafile file number=00008 name=/oradata/rdsdb19/abcdata82.dbf
+channel ORA_DISK_1: starting piece 1 at 05-FEB-22
+channel ORA_DISK_1: finished piece 1 at 05-FEB-22
+piece handle=/fra/RDSDB19/backupset/2022_02_05/o1_mf_nnndf_TAG20220205T102635_jzw0w454_.bkp tag=TAG20220205T102635 comment=NONE [This backup piece contains info about data files]
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:25
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ORA_DISK_1: starting piece 1 at 05-FEB-22
+channel ORA_DISK_1: finished piece 1 at 05-FEB-22
+piece handle=/fra/RDSDB19/backupset/2022_02_05/o1_mf_ncnnf_TAG20220205T102635_jzw0wyjp_.bkp tag=TAG20220205T102635 comment=NONE [This backup piece contains info about control file and spfile]
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 05-FEB-22
+
+Starting Control File and SPFILE Autobackup at 05-FEB-22
+piece handle=/fra/RDSDB19/autobackup/2022_02_05/o1_mf_s_1095848468_jzw0wzr2_.bkp comment=NONE [Without TAG name then it is called as Control File]
+Finished Control File and SPFILE Autobackup at 05-FEB-22
+
+Ctrl+d
+
+Recovery Manager complete.
+[oracle@rdsdbsrvr81 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Sat Feb 5 10:53:27 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+SQL> select open_mode from v$database;
+
+OPEN_MODE
+--------------------
+MOUNTED
+
+SQL> alter database open;
+
+Database altered.
+
+SQL> select open_mode from v$database;
+
+OPEN_MODE
+--------------------
+READ WRITE
+
+
+[oracle@rdsdbsrvr81 ~]$ cd /fra/RDSDB19/backupset/2022_02_05/
+[oracle@rdsdbsrvr81 2022_02_05]$ ls
+o1_mf_ncnnf_TAG20220205T102635_jzw0wyjp_.bkp
+o1_mf_nnndf_TAG20220205T102635_jzw0w454_.bkp
+
+……………………………………………………………………………………………………………………………..
+
+To take RMAN COLD BACKUP in any specific location
+
+. oraenv
+rdsdb19
+sqlplus / as sysdba
+startup mount
+rman target /
+backup database include current controlfile format='/backups/RMAN_COLD_BACKUP/%d_%s';
+
+RMAN> backup database include current controlfile format='/backups/RMAN_COLD_BACKUP/%d_%s';
+
+Starting backup at 05-FEB-22
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00001 name=/oradata/rdsdb19/system01.dbf
+input datafile file number=00002 name=/oradata/rdsdb19/sysaux01.dbf
+input datafile file number=00003 name=/oradata/rdsdb19/undotbs01.dbf
+input datafile file number=00004 name=/oradata/rdsdb19/users01.dbf
+input datafile file number=00005 name=/oradata/rdsdb19/abcdata01.dbf
+input datafile file number=00006 name=/oradata/rdsdb19/pqrdata01.dbf
+input datafile file number=00007 name=/oradata/rdsdb19/pqrdata02.dbf
+input datafile file number=00008 name=/oradata/rdsdb19/abcdata82.dbf
+channel ORA_DISK_1: starting piece 1 at 05-FEB-22
+
+
+channel ORA_DISK_1: finished piece 1 at 05-FEB-22
+piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_8 tag=TAG20220205T113714 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:26
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ORA_DISK_1: starting piece 1 at 05-FEB-22
+channel ORA_DISK_1: finished piece 1 at 05-FEB-22
+piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_9 tag=TAG20220205T113714 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 05-FEB-22
+
+Starting Control File and SPFILE Autobackup at 05-FEB-22
+piece handle=/fra/RDSDB19/autobackup/2022_02_05/o1_mf_s_1095851969_jzw51gcr_.bkp comment=NONE
+Finished Control File and SPFILE Autobackup at 05-FEB-22
+
+…………………………………………………………………………………………………………………………………………………………………………………..
+
+If you want to set the default location for taking backups 
+
+RMAN> configure channel device type disk format='/backups/RMAN_COLD_BACKUP/%d_%s';
+
+new RMAN configuration parameters:
+CONFIGURE CHANNEL DEVICE TYPE DISK FORMAT   '/backups/RMAN_COLD_BACKUP/%d_%s';
+new RMAN configuration parameters are successfully stored
+released channel: ORA_DISK_1
+
+
+………………………………………………………………………………………………………………………………………………………………………………………….
+To List the number of backups 
+	1. Connect to rman target /
+	2. List backup
+
+RMAN> list backup;
+
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+1       Full    8.33M      DISK        00:00:00     03-JAN-22
+        BP Key: 1   Status: AVAILABLE  Compressed: NO  Tag: TAG20220103T100210
+        Piece Name: /fra/RDSDB19/autobackup/2022_01_03/o1_mf_s_1092996130_jx4z2bvs_.bkp
+  SPFILE Included: Modification time: 03-JAN-22
+  SPFILE db_unique_name: RDSDB19
+  Control File Included: Ckp SCN: 528602       Ckp time: 03-JAN-22
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+2       Full    8.33M      DISK        00:00:00     03-FEB-22
+        BP Key: 2   Status: AVAILABLE  Compressed: NO  Tag: TAG20220203T132714
+        Piece Name: /fra/RDSDB19/autobackup/2022_02_03/o1_mf_s_1095686834_jzq2ptcg_.bkp
+  SPFILE Included: Modification time: 03-FEB-22
+  SPFILE db_unique_name: RDSDB19
+  Control File Included: Ckp SCN: 753286       Ckp time: 03-FEB-22
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+3       Full    8.33M      DISK        00:00:00     03-FEB-22
+        BP Key: 3   Status: AVAILABLE  Compressed: NO  Tag: TAG20220203T133714
+        Piece Name: /fra/RDSDB19/autobackup/2022_02_03/o1_mf_s_1095687434_jzq39lph_.bkp
+  SPFILE Included: Modification time: 03-FEB-22
+  SPFILE db_unique_name: RDSDB19
+  Control File Included: Ckp SCN: 754026       Ckp time: 03-FEB-22
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+4       Full    546.36M    DISK        00:00:23     05-FEB-22
+        BP Key: 4   Status: AVAILABLE  Compressed: NO  Tag: TAG20220205T102635
+        Piece Name: /fra/RDSDB19/backupset/2022_02_05/o1_mf_nnndf_TAG20220205T102635_jzw0w454_.bkp
+  List of Datafiles in backup set 4
+  File LV Type Ckp SCN    Ckp Time  Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- --------- ----------- ------ ----
+  1       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/system01.dbf
+  2       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/sysaux01.dbf
+  3       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/undotbs01.dbf
+  4       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/users01.dbf
+  5       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/abcdata01.dbf
+  6       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/pqrdata01.dbf
+  7       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/pqrdata02.dbf
+  8       Full 902112     05-FEB-22              NO    /oradata/rdsdb19/abcdata82.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+5       Full    8.30M      DISK        00:00:01     05-FEB-22
+        BP Key: 5   Status: AVAILABLE  Compressed: NO  Tag: TAG20220205T102635
+        Piece Name: /fra/RDSDB19/backupset/2022_02_05/o1_mf_ncnnf_TAG20220205T102635_jzw0wyjp_.bkp
+  Control File Included: Ckp SCN: 902112       Ckp time: 05-FEB-22
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+6       Full    8.33M      DISK        00:00:00     05-FEB-22
+        BP Key: 6   Status: AVAILABLE  Compressed: NO  Tag: TAG20220205T102703
+        Piece Name: /fra/RDSDB19/autobackup/2022_02_05/o1_mf_s_1095848468_jzw0wzr2_.bkp
+  SPFILE Included: Modification time: 05-FEB-22
+  SPFILE db_unique_name: RDSDB19
+  Control File Included: Ckp SCN: 902112       Ckp time: 05-FEB-22
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+7       Full    498.33M    DISK        00:00:16     05-FEB-22
+        BP Key: 7   Status: AVAILABLE  Compressed: NO  Tag: TAG20220205T113714
+        Piece Name: /backups/RMAN_COLD_BACKUP/RDSDB19_8
+  List of Datafiles in backup set 7
+  File LV Type Ckp SCN    Ckp Time  Abs Fuz SCN Sparse Name
+  ---- -- ---- ---------- --------- ----------- ------ ----
+  1       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/system01.dbf
+  2       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/sysaux01.dbf
+  3       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/undotbs01.dbf
+  4       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/users01.dbf
+  5       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/abcdata01.dbf
+  6       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/pqrdata01.dbf
+  7       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/pqrdata02.dbf
+  8       Full 903864     05-FEB-22              NO    /oradata/rdsdb19/abcdata82.dbf
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+8       Full    8.30M      DISK        00:00:01     05-FEB-22
+        BP Key: 8   Status: AVAILABLE  Compressed: NO  Tag: TAG20220205T113714
+        Piece Name: /backups/RMAN_COLD_BACKUP/RDSDB19_9
+  Control File Included: Ckp SCN: 903864       Ckp time: 05-FEB-22
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+9       Full    8.33M      DISK        00:00:00     05-FEB-22
+        BP Key: 9   Status: AVAILABLE  Compressed: NO  Tag: TAG20220205T113742
+        Piece Name: /fra/RDSDB19/autobackup/2022_02_05/o1_mf_s_1095851969_jzw51gcr_.bkp
+  SPFILE Included: Modification time: 05-FEB-22
+  SPFILE db_unique_name: RDSDB19
+  Control File Included: Ckp SCN: 903864       Ckp time: 05-FEB-22
+
+RMAN>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
