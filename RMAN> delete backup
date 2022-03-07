@@ -1,0 +1,454 @@
+RMAN> delete backup;
+
+using channel ORA_DISK_1
+
+List of Backup Pieces
+BP Key  BS Key  Pc# Cp# Status      Device Type Piece Name
+------- ------- --- --- ----------- ----------- ----------
+74      69      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_70
+75      70      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097842569_k1rvxkcj_.bkp
+76      71      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_72
+77      72      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_73
+78      73      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_74
+79      74      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_75
+80      75      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097848581_k1s1sf8g_.bkp
+81      76      1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP_RDSDB19_78
+82      77      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_79
+83      78      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_80
+84      79      1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP_RDSDB19_81
+85      80      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097848926_k1s246dt_.bkp
+86      81      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_83
+87      82      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849137_k1s2bsg8_.bkp
+88      83      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_85
+89      84      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849147_k1s2c3x3_.bkp
+90      85      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_87
+91      86      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849187_k1s2dcm2_.bkp
+92      87      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_89
+93      88      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849224_k1s2fjxx_.bkp
+94      89      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_91
+95      90      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849227_k1s2fmff_.bkp
+96      91      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_93
+97      92      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849229_k1s2fp0j_.bkp
+98      93      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_95
+99      94      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849232_k1s2frgw_.bkp
+100     95      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_97
+101     96      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849234_k1s2ftyq_.bkp
+102     97      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_99
+103     98      1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849237_k1s2fxho_.bkp
+104     99      1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_101
+105     100     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849239_k1s2fzyo_.bkp
+106     101     1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_103
+107     102     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849394_k1s2ltr4_.bkp
+108     103     1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_105
+109     104     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849476_k1s2od3f_.bkp
+110     105     1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_107
+111     106     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849523_k1s2pvs9_.bkp
+112     107     1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_109
+113     108     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849567_k1s2r79l_.bkp
+114     109     1   1   AVAILABLE   DISK        /backups/RMAN_COLD_BACKUP/RDSDB19_111
+115     110     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849595_k1s2s3nk_.bkp
+116     111     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_113
+117     112     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849690_k1s2w27l_.bkp
+118     113     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_115
+119     114     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849697_k1s2w9cm_.bkp
+120     115     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_117
+121     116     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849704_k1s2wj5t_.bkp
+122     117     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_119
+123     118     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849719_k1s2wzoh_.bkp
+124     119     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_121
+125     120     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849727_k1s2x72v_.bkp
+126     121     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_123
+127     122     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849732_k1s2xdlo_.bkp
+128     123     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_125
+129     124     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849738_k1s2xl4h_.bkp
+130     125     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_127
+131     126     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849743_k1s2xqmn_.bkp
+132     127     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_129
+133     128     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849914_k1s332k7_.bkp
+134     129     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_131
+135     130     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849919_k1s3371x_.bkp
+136     131     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_133
+137     132     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849921_k1s339lo_.bkp
+138     133     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_135
+139     134     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849924_k1s33d2j_.bkp
+140     135     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_137
+141     136     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849926_k1s33gl5_.bkp
+142     137     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_139
+143     138     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849929_k1s33k1k_.bkp
+144     139     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_141
+145     140     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849931_k1s33mky_.bkp
+146     141     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_143
+147     142     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855479_k1s8jzm4_.bkp
+148     143     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_145
+149     144     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855496_k1s8kj8r_.bkp
+150     145     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_147
+151     146     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855521_k1s8l93f_.bkp
+152     147     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_149
+153     148     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855562_k1s8mltm_.bkp
+154     149     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_151
+155     150     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855589_k1s8nf6o_.bkp
+156     151     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_153
+157     152     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855644_k1s8p4h3_.bkp
+158     153     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_155
+159     154     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855668_k1s8pw6m_.bkp
+160     155     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_157
+161     156     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855795_k1s8tvft_.bkp
+162     157     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_159
+163     158     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855884_k1s8xofp_.bkp
+164     159     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_161
+165     160     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855997_k1s91559_.bkp
+166     161     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_163
+167     162     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856005_k1s91frq_.bkp
+168     163     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_165
+169     164     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856008_k1s91j85_.bkp
+170     165     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_167
+171     166     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856010_k1s91ltm_.bkp
+172     167     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_169
+173     168     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856013_k1s91ogf_.bkp
+174     169     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_171
+175     170     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856081_k1s93sp6_.bkp
+176     171     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_173
+177     172     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856108_k1s94nsw_.bkp
+178     173     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_175
+179     174     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856139_k1s95mf8_.bkp
+180     175     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_177
+181     176     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856187_k1s973ry_.bkp
+182     177     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_179
+183     178     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856196_k1s97dfx_.bkp
+184     179     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_181
+185     180     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856199_k1s97h21_.bkp
+186     181     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_183
+187     182     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856201_k1s97kl9_.bkp
+188     183     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_185
+189     184     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856204_k1s97n4r_.bkp
+190     185     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_187
+191     186     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856550_k1s9lgx6_.bkp
+192     187     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_189
+193     188     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856559_k1s9lqkw_.bkp
+194     189     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_191
+195     190     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856570_k1s9m2wk_.bkp
+196     191     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_193
+197     192     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856575_k1s9m7t1_.bkp
+198     193     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_195
+199     194     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856583_k1s9mho1_.bkp
+200     195     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_197
+201     196     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856589_k1s9mofs_.bkp
+202     197     1   1   AVAILABLE   DISK        /backups/RMAN_HOT_BACKUP/RDSDB19_199
+203     198     1   1   AVAILABLE   DISK        /fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856595_k1s9mvjb_.bkp
+
+Do you really want to delete the above objects (enter YES or NO)? YES
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_70 RECID=74 STAMP=1097842554
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097842569_k1rvxkcj_.bkp RECID=75 STAMP=1097842569
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_72 RECID=76 STAMP=1097848561
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_73 RECID=77 STAMP=1097848562
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_74 RECID=78 STAMP=1097848578
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_75 RECID=79 STAMP=1097848580
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097848581_k1s1sf8g_.bkp RECID=80 STAMP=1097848581
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP_RDSDB19_78 RECID=81 STAMP=1097848914
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_79 RECID=82 STAMP=1097848915
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_80 RECID=83 STAMP=1097848923
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP_RDSDB19_81 RECID=84 STAMP=1097848925
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097848926_k1s246dt_.bkp RECID=85 STAMP=1097848926
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_83 RECID=86 STAMP=1097849134
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849137_k1s2bsg8_.bkp RECID=87 STAMP=1097849137
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_85 RECID=88 STAMP=1097849144
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849147_k1s2c3x3_.bkp RECID=89 STAMP=1097849147
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_87 RECID=90 STAMP=1097849184
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849187_k1s2dcm2_.bkp RECID=91 STAMP=1097849187
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_89 RECID=92 STAMP=1097849221
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849224_k1s2fjxx_.bkp RECID=93 STAMP=1097849224
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_91 RECID=94 STAMP=1097849226
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849227_k1s2fmff_.bkp RECID=95 STAMP=1097849227
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_93 RECID=96 STAMP=1097849228
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849229_k1s2fp0j_.bkp RECID=97 STAMP=1097849230
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_95 RECID=98 STAMP=1097849231
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849232_k1s2frgw_.bkp RECID=99 STAMP=1097849232
+
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_97 RECID=100 STAMP=1097849233
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849234_k1s2ftyq_.bkp RECID=101 STAMP=1097849234
+
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_99 RECID=102 STAMP=1097849236
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849237_k1s2fxho_.bkp RECID=103 STAMP=1097849237
+
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_101 RECID=104 STAMP=1097849238
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849239_k1s2fzyo_.bkp RECID=105 STAMP=1097849239
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_103 RECID=106 STAMP=1097849393
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849394_k1s2ltr4_.bkp RECID=107 STAMP=1097849394
+
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_105 RECID=108 STAMP=1097849473
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849476_k1s2od3f_.bkp RECID=109 STAMP=1097849476
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_107 RECID=110 STAMP=1097849522
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849523_k1s2pvs9_.bkp RECID=111 STAMP=1097849523
+
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_109 RECID=112 STAMP=1097849566
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849567_k1s2r79l_.bkp RECID=113 STAMP=1097849567
+deleted backup piece
+backup piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_111 RECID=114 STAMP=1097849594
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849595_k1s2s3nk_.bkp RECID=115 STAMP=1097849595
+
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_113 RECID=116 STAMP=1097849687
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849690_k1s2w27l_.bkp RECID=117 STAMP=1097849690
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_115 RECID=118 STAMP=1097849696
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849697_k1s2w9cm_.bkp RECID=119 STAMP=1097849697
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_117 RECID=120 STAMP=1097849703
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849704_k1s2wj5t_.bkp RECID=121 STAMP=1097849704
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_119 RECID=122 STAMP=1097849718
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849719_k1s2wzoh_.bkp RECID=123 STAMP=1097849719
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_121 RECID=124 STAMP=1097849725
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849727_k1s2x72v_.bkp RECID=125 STAMP=1097849727
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_123 RECID=126 STAMP=1097849731
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849732_k1s2xdlo_.bkp RECID=127 STAMP=1097849732
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_125 RECID=128 STAMP=1097849737
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849738_k1s2xl4h_.bkp RECID=129 STAMP=1097849738
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_127 RECID=130 STAMP=1097849742
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849743_k1s2xqmn_.bkp RECID=131 STAMP=1097849743
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_129 RECID=132 STAMP=1097849911
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849914_k1s332k7_.bkp RECID=133 STAMP=1097849914
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_131 RECID=134 STAMP=1097849915
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849919_k1s3371x_.bkp RECID=135 STAMP=1097849919
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_133 RECID=136 STAMP=1097849920
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849921_k1s339lo_.bkp RECID=137 STAMP=1097849921
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_135 RECID=138 STAMP=1097849922
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849924_k1s33d2j_.bkp RECID=139 STAMP=1097849924
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_137 RECID=140 STAMP=1097849925
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849926_k1s33gl5_.bkp RECID=141 STAMP=1097849926
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_139 RECID=142 STAMP=1097849927
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849929_k1s33k1k_.bkp RECID=143 STAMP=1097849929
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_141 RECID=144 STAMP=1097849930
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097849931_k1s33mky_.bkp RECID=145 STAMP=1097849931
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_143 RECID=146 STAMP=1097855478
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855479_k1s8jzm4_.bkp RECID=147 STAMP=1097855479
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_145 RECID=148 STAMP=1097855481
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855496_k1s8kj8r_.bkp RECID=149 STAMP=1097855496
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_147 RECID=150 STAMP=1097855513
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855521_k1s8l93f_.bkp RECID=151 STAMP=1097855521
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_149 RECID=152 STAMP=1097855561
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855562_k1s8mltm_.bkp RECID=153 STAMP=1097855562
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_151 RECID=154 STAMP=1097855588
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855589_k1s8nf6o_.bkp RECID=155 STAMP=1097855589
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_153 RECID=156 STAMP=1097855643
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855644_k1s8p4h3_.bkp RECID=157 STAMP=1097855644
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_155 RECID=158 STAMP=1097855667
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855668_k1s8pw6m_.bkp RECID=159 STAMP=1097855668
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_157 RECID=160 STAMP=1097855794
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855795_k1s8tvft_.bkp RECID=161 STAMP=1097855795
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_159 RECID=162 STAMP=1097855877
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855884_k1s8xofp_.bkp RECID=163 STAMP=1097855885
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_161 RECID=164 STAMP=1097855989
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097855997_k1s91559_.bkp RECID=165 STAMP=1097855997
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_163 RECID=166 STAMP=1097855998
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856005_k1s91frq_.bkp RECID=167 STAMP=1097856005
+
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_165 RECID=168 STAMP=1097856007
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856008_k1s91j85_.bkp RECID=169 STAMP=1097856008
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_167 RECID=170 STAMP=1097856009
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856010_k1s91ltm_.bkp RECID=171 STAMP=1097856010
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_169 RECID=172 STAMP=1097856012
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856013_k1s91ogf_.bkp RECID=173 STAMP=1097856013
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_171 RECID=174 STAMP=1097856080
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856081_k1s93sp6_.bkp RECID=175 STAMP=1097856081
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_173 RECID=176 STAMP=1097856101
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856108_k1s94nsw_.bkp RECID=177 STAMP=1097856108
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_175 RECID=178 STAMP=1097856132
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856139_k1s95mf8_.bkp RECID=179 STAMP=1097856139
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_177 RECID=180 STAMP=1097856184
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856187_k1s973ry_.bkp RECID=181 STAMP=1097856187
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_179 RECID=182 STAMP=1097856189
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856196_k1s97dfx_.bkp RECID=183 STAMP=1097856196
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_181 RECID=184 STAMP=1097856197
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856199_k1s97h21_.bkp RECID=185 STAMP=1097856199
+deleted backup piece
+
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_183 RECID=186 STAMP=1097856200
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856201_k1s97kl9_.bkp RECID=187 STAMP=1097856201
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_185 RECID=188 STAMP=1097856203
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856204_k1s97n4r_.bkp RECID=189 STAMP=1097856204
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_187 RECID=190 STAMP=1097856549
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856550_k1s9lgx6_.bkp RECID=191 STAMP=1097856550
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_189 RECID=192 STAMP=1097856552
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856559_k1s9lqkw_.bkp RECID=193 STAMP=1097856559
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_191 RECID=194 STAMP=1097856563
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856570_k1s9m2wk_.bkp RECID=195 STAMP=1097856570
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_193 RECID=196 STAMP=1097856574
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856575_k1s9m7t1_.bkp RECID=197 STAMP=1097856575
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_195 RECID=198 STAMP=1097856582
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856583_k1s9mho1_.bkp RECID=199 STAMP=1097856583
+
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_197 RECID=200 STAMP=1097856588
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856589_k1s9mofs_.bkp RECID=201 STAMP=1097856589
+deleted backup piece
+backup piece handle=/backups/RMAN_HOT_BACKUP/RDSDB19_199 RECID=202 STAMP=1097856594
+
+deleted backup piece
+backup piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097856595_k1s9mvjb_.bkp RECID=203 STAMP=1097856595
+Deleted 130 objects
