@@ -1,0 +1,145 @@
+[root@192 /]# yum install bind* -y
+Loaded plugins: langpacks, ulninfo
+Resolving Dependencies
+--> Running transaction check
+---> Package bind.x86_64 32:9.11.4-26.P2.el7_9.9 will be installed
+--> Processing Dependency: libcrypto.so.10(OPENSSL_1.0.2)(64bit) for package: 32:bind-9.11.4-26.P2.el7_9.9.x86_64
+--> Processing Dependency: python-ply for package: 32:bind-9.11.4-26.P2.el7_9.9.x86_64
+---> Package bind-chroot.x86_64 32:9.11.4-26.P2.el7_9.9 will be installed
+---> Package bind-dyndb-ldap.x86_64 0:11.1-7.el7 will be installed
+---> Package bind-export-devel.x86_64 32:9.11.4-16.P2.el7_8.6 will be installed
+--> Processing Dependency: bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6 for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+--> Processing Dependency: libcap-devel for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+--> Processing Dependency: openssl-devel for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+---> Package bind-export-libs.x86_64 32:9.11.4-26.P2.el7_9.9 will be installed
+---> Package bind-libs.x86_64 32:9.9.4-37.el7 will be updated
+---> Package bind-libs.x86_64 32:9.11.4-26.P2.el7_9.9 will be an update
+---> Package bind-libs-lite.x86_64 32:9.9.4-37.el7 will be updated
+--> Processing Dependency: libdns-export.so.100()(64bit) for package: 12:dhclient-4.2.5-47.0.1.el7.x86_64
+--> Processing Dependency: libisc-export.so.95()(64bit) for package: 12:dhclient-4.2.5-47.0.1.el7.x86_64
+---> Package bind-libs-lite.x86_64 32:9.11.4-26.P2.el7_9.9 will be an update
+---> Package bind-license.noarch 32:9.9.4-37.el7 will be updated
+---> Package bind-license.noarch 32:9.11.4-26.P2.el7_9.9 will be an update
+---> Package bind-pkcs11.x86_64 32:9.11.4-26.P2.el7_9.9 will be installed
+---> Package bind-pkcs11-libs.x86_64 32:9.11.4-26.P2.el7_9.9 will be installed
+---> Package bind-pkcs11-utils.x86_64 32:9.11.4-26.P2.el7_9.9 will be installed
+---> Package bind-utils.x86_64 32:9.9.4-37.el7 will be updated
+---> Package bind-utils.x86_64 32:9.11.4-26.P2.el7_9.9 will be an update
+--> Running transaction check
+---> Package bind-export-devel.x86_64 32:9.11.4-16.P2.el7_8.6 will be installed
+--> Processing Dependency: bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6 for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+---> Package dhclient.x86_64 12:4.2.5-47.0.1.el7 will be updated
+---> Package dhclient.x86_64 12:4.2.5-83.0.1.el7_9.1 will be an update
+--> Processing Dependency: dhcp-common = 12:4.2.5-83.0.1.el7_9.1 for package: 12:dhclient-4.2.5-83.0.1.el7_9.1.x86_64
+--> Processing Dependency: dhcp-libs(x86-64) = 12:4.2.5-83.0.1.el7_9.1 for package: 12:dhclient-4.2.5-83.0.1.el7_9.1.x86_64
+---> Package libcap-devel.x86_64 0:2.22-11.el7 will be installed
+--> Processing Dependency: libcap = 2.22-11.el7 for package: libcap-devel-2.22-11.el7.x86_64
+---> Package openssl-devel.x86_64 1:1.0.2k-24.el7_9 will be installed
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.2k-24.el7_9.x86_64
+--> Processing Dependency: zlib-devel(x86-64) for package: 1:openssl-devel-1.0.2k-24.el7_9.x86_64
+---> Package openssl-libs.x86_64 1:1.0.1e-60.el7 will be updated
+--> Processing Dependency: openssl-libs(x86-64) = 1:1.0.1e-60.el7 for package: 1:openssl-1.0.1e-60.el7.x86_64
+---> Package openssl-libs.x86_64 1:1.0.2k-24.el7_9 will be an update
+---> Package python-ply.noarch 0:3.4-11.el7 will be installed
+--> Running transaction check
+---> Package bind-export-devel.x86_64 32:9.11.4-16.P2.el7_8.6 will be installed
+--> Processing Dependency: bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6 for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+---> Package dhcp-common.x86_64 12:4.2.5-47.0.1.el7 will be updated
+---> Package dhcp-common.x86_64 12:4.2.5-83.0.1.el7_9.1 will be an update
+---> Package dhcp-libs.x86_64 12:4.2.5-47.0.1.el7 will be updated
+---> Package dhcp-libs.x86_64 12:4.2.5-83.0.1.el7_9.1 will be an update
+---> Package krb5-devel.x86_64 0:1.15.1-51.0.1.el7_9 will be installed
+--> Processing Dependency: krb5-libs(x86-64) = 1.15.1-51.0.1.el7_9 for package: krb5-devel-1.15.1-51.0.1.el7_9.x86_64
+--> Processing Dependency: libkadm5(x86-64) = 1.15.1-51.0.1.el7_9 for package: krb5-devel-1.15.1-51.0.1.el7_9.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.15.1-51.0.1.el7_9.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.15.1-51.0.1.el7_9.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.15.1-51.0.1.el7_9.x86_64
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.15.1-51.0.1.el7_9.x86_64
+---> Package libcap.x86_64 0:2.22-8.el7 will be updated
+---> Package libcap.x86_64 0:2.22-11.el7 will be an update
+---> Package openssl.x86_64 1:1.0.1e-60.el7 will be updated
+---> Package openssl.x86_64 1:1.0.2k-24.el7_9 will be an update
+---> Package zlib-devel.x86_64 0:1.2.7-19.el7_9 will be installed
+--> Processing Dependency: zlib = 1.2.7-19.el7_9 for package: zlib-devel-1.2.7-19.el7_9.x86_64
+--> Running transaction check
+---> Package bind-export-devel.x86_64 32:9.11.4-16.P2.el7_8.6 will be installed
+--> Processing Dependency: bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6 for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.el7 will be installed
+---> Package krb5-libs.x86_64 0:1.14.1-26.el7 will be updated
+---> Package krb5-libs.x86_64 0:1.15.1-51.0.1.el7_9 will be an update
+---> Package libcom_err-devel.x86_64 0:1.42.9-19.el7 will be installed
+--> Processing Dependency: libcom_err(x86-64) = 1.42.9-19.el7 for package: libcom_err-devel-1.42.9-19.el7.x86_64
+---> Package libkadm5.x86_64 0:1.15.1-51.0.1.el7_9 will be installed
+---> Package libselinux-devel.x86_64 0:2.5-15.el7 will be installed
+--> Processing Dependency: libselinux(x86-64) = 2.5-15.el7 for package: libselinux-devel-2.5-15.el7.x86_64
+--> Processing Dependency: libsepol-devel(x86-64) >= 2.5-10 for package: libselinux-devel-2.5-15.el7.x86_64
+--> Processing Dependency: pkgconfig(libpcre) for package: libselinux-devel-2.5-15.el7.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.5-15.el7.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.el7 will be installed
+---> Package zlib.x86_64 0:1.2.7-17.el7 will be updated
+---> Package zlib.x86_64 0:1.2.7-19.el7_9 will be an update
+--> Running transaction check
+---> Package bind-export-devel.x86_64 32:9.11.4-16.P2.el7_8.6 will be installed
+--> Processing Dependency: bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6 for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+---> Package libcom_err.x86_64 0:1.42.9-9.el7 will be updated
+--> Processing Dependency: libcom_err(x86-64) = 1.42.9-9.el7 for package: libss-1.42.9-9.el7.x86_64
+--> Processing Dependency: libcom_err(x86-64) = 1.42.9-9.el7 for package: e2fsprogs-libs-1.42.9-9.el7.x86_64
+--> Processing Dependency: libcom_err(x86-64) = 1.42.9-9.el7 for package: e2fsprogs-1.42.9-9.el7.x86_64
+---> Package libcom_err.x86_64 0:1.42.9-19.el7 will be an update
+---> Package libselinux.x86_64 0:2.5-6.el7 will be updated
+--> Processing Dependency: libselinux(x86-64) = 2.5-6.el7 for package: libselinux-python-2.5-6.el7.x86_64
+--> Processing Dependency: libselinux(x86-64) = 2.5-6.el7 for package: libselinux-utils-2.5-6.el7.x86_64
+---> Package libselinux.x86_64 0:2.5-15.el7 will be an update
+--> Processing Dependency: libsepol(x86-64) >= 2.5-10 for package: libselinux-2.5-15.el7.x86_64
+---> Package libsepol-devel.x86_64 0:2.5-10.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-17.el7 will be installed
+--> Processing Dependency: pcre(x86-64) = 8.32-17.el7 for package: pcre-devel-8.32-17.el7.x86_64
+--> Running transaction check
+---> Package bind-export-devel.x86_64 32:9.11.4-16.P2.el7_8.6 will be installed
+--> Processing Dependency: bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6 for package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64
+---> Package e2fsprogs.x86_64 0:1.42.9-9.el7 will be updated
+---> Package e2fsprogs.x86_64 0:1.42.9-19.el7 will be an update
+---> Package e2fsprogs-libs.x86_64 0:1.42.9-9.el7 will be updated
+---> Package e2fsprogs-libs.x86_64 0:1.42.9-19.el7 will be an update
+---> Package libselinux-python.x86_64 0:2.5-6.el7 will be updated
+---> Package libselinux-python.x86_64 0:2.5-15.el7 will be an update
+---> Package libselinux-utils.x86_64 0:2.5-6.el7 will be updated
+---> Package libselinux-utils.x86_64 0:2.5-15.el7 will be an update
+---> Package libsepol.x86_64 0:2.5-6.el7 will be updated
+---> Package libsepol.x86_64 0:2.5-10.el7 will be an update
+---> Package libss.x86_64 0:1.42.9-9.el7 will be updated
+---> Package libss.x86_64 0:1.42.9-19.el7 will be an update
+---> Package pcre.x86_64 0:8.32-15.el7_2.1 will be updated
+---> Package pcre.x86_64 0:8.32-17.el7 will be an update
+--> Finished Dependency Resolution
+Error: Package: 32:bind-export-devel-9.11.4-16.P2.el7_8.6.x86_64 (ol7_latest)
+           Requires: bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6
+           Available: 32:bind-export-libs-9.11.4-9.P2.el7.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-9.P2.el7
+           Available: 32:bind-export-libs-9.11.4-16.P2.el7.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7
+           Available: 32:bind-export-libs-9.11.4-16.P2.el7_8.2.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.2
+           Available: 32:bind-export-libs-9.11.4-16.P2.el7_8.3.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.3
+           Available: 32:bind-export-libs-9.11.4-16.P2.el7_8.6.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-16.P2.el7_8.6
+           Available: 32:bind-export-libs-9.11.4-26.P2.el7.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7
+           Available: 32:bind-export-libs-9.11.4-26.P2.el7_9.2.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7_9.2
+           Available: 32:bind-export-libs-9.11.4-26.P2.el7_9.3.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7_9.3
+           Available: 32:bind-export-libs-9.11.4-26.P2.el7_9.4.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7_9.4
+           Available: 32:bind-export-libs-9.11.4-26.P2.el7_9.5.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7_9.5
+           Available: 32:bind-export-libs-9.11.4-26.P2.el7_9.7.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7_9.7
+           Available: 32:bind-export-libs-9.11.4-26.P2.el7_9.8.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7_9.8
+           Installing: 32:bind-export-libs-9.11.4-26.P2.el7_9.9.x86_64 (ol7_latest)
+               bind-export-libs(x86-64) = 32:9.11.4-26.P2.el7_9.9
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+[root@192 /]# 
