@@ -1,0 +1,76 @@
+RMAN> backup database include current controlfile plus archivelog format='/backups/RMAN_HOT_BACKUP_%d_%s';
+
+
+Starting backup at 28-FEB-22
+current log archived
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting archived log backup set
+channel ORA_DISK_1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=23 RECID=11 STAMP=1096113398
+input archived log thread=1 sequence=24 RECID=12 STAMP=1096213698
+input archived log thread=1 sequence=25 RECID=13 STAMP=1096283127
+input archived log thread=1 sequence=26 RECID=14 STAMP=1096283240
+input archived log thread=1 sequence=27 RECID=15 STAMP=1096283260
+input archived log thread=1 sequence=28 RECID=16 STAMP=1096283482
+input archived log thread=1 sequence=29 RECID=17 STAMP=1096283492
+input archived log thread=1 sequence=30 RECID=18 STAMP=1096373573
+input archived log thread=1 sequence=31 RECID=19 STAMP=1096373714
+input archived log thread=1 sequence=32 RECID=20 STAMP=1096373805
+input archived log thread=1 sequence=33 RECID=21 STAMP=1096373836
+input archived log thread=1 sequence=34 RECID=22 STAMP=1096375647
+input archived log thread=1 sequence=35 RECID=23 STAMP=1096375683
+input archived log thread=1 sequence=36 RECID=24 STAMP=1097424212
+input archived log thread=1 sequence=37 RECID=25 STAMP=1097576971
+input archived log thread=1 sequence=38 RECID=26 STAMP=1097842524
+input archived log thread=1 sequence=39 RECID=27 STAMP=1097848560
+input archived log thread=1 sequence=40 RECID=28 STAMP=1097848580
+input archived log thread=1 sequence=41 RECID=29 STAMP=1097848845
+input archived log thread=1 sequence=42 RECID=30 STAMP=1097848914
+channel ORA_DISK_1: starting piece 1 at 28-FEB-22
+channel ORA_DISK_1: finished piece 1 at 28-FEB-22
+piece handle=/backups/RMAN_HOT_BACKUP_RDSDB19_78 tag=TAG20220228T140154 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 28-FEB-22
+
+Starting backup at 28-FEB-22
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00001 name=/oradata/rdsdb19/system01.dbf
+input datafile file number=00002 name=/oradata/rdsdb19/sysaux01.dbf
+input datafile file number=00003 name=/oradata/rdsdb19/undotbs01.dbf
+input datafile file number=00004 name=/oradata/rdsdb19/users01.dbf
+input datafile file number=00005 name=/oradata/rdsdb19/abcdata01.dbf
+input datafile file number=00006 name=/oradata/rdsdb19/pqrdata01.dbf
+input datafile file number=00007 name=/oradata/rdsdb19/pqrdata02.dbf
+input datafile file number=00008 name=/oradata/rdsdb19/abcdata82.dbf
+channel ORA_DISK_1: starting piece 1 at 28-FEB-22
+channel ORA_DISK_1: finished piece 1 at 28-FEB-22
+piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_79 tag=TAG20220228T140155 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:07
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ORA_DISK_1: starting piece 1 at 28-FEB-22
+channel ORA_DISK_1: finished piece 1 at 28-FEB-22
+piece handle=/backups/RMAN_COLD_BACKUP/RDSDB19_80 tag=TAG20220228T140155 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 28-FEB-22
+
+Starting backup at 28-FEB-22
+current log archived
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting archived log backup set
+channel ORA_DISK_1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=43 RECID=31 STAMP=1097848925
+channel ORA_DISK_1: starting piece 1 at 28-FEB-22
+channel ORA_DISK_1: finished piece 1 at 28-FEB-22
+piece handle=/backups/RMAN_HOT_BACKUP_RDSDB19_81 tag=TAG20220228T140205 comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 28-FEB-22
+
+Starting Control File and SPFILE Autobackup at 28-FEB-22
+piece handle=/fra/RDSDB19/autobackup/2022_02_28/o1_mf_s_1097848926_k1s246dt_.bkp comment=NONE
+Finished Control File and SPFILE Autobackup at 28-FEB-22
+
+RMAN>
