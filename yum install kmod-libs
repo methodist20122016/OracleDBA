@@ -1,0 +1,36 @@
+[root@192 /]# yum install kmod-libs
+Loaded plugins: langpacks, ulninfo
+Resolving Dependencies
+--> Running transaction check
+---> Package kmod-libs.x86_64 0:20-9.el7 will be updated
+---> Package kmod-libs.x86_64 0:20-28.0.3.el7 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=====================================================================================================================================================
+ Package                            Arch                            Version                                Repository                           Size
+=====================================================================================================================================================
+Updating:
+ kmod-libs                          x86_64                          20-28.0.3.el7                          ol7_latest                           53 k
+
+Transaction Summary
+=====================================================================================================================================================
+Upgrade  1 Package
+
+Total size: 53 k
+Is this ok [y/d/N]: y
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : kmod-libs-20-28.0.3.el7.x86_64                                                                                                    1/2 
+  Cleanup    : kmod-libs-20-9.el7.x86_64                                                                                                         2/2 
+  Verifying  : kmod-libs-20-28.0.3.el7.x86_64                                                                                                    1/2 
+  Verifying  : kmod-libs-20-9.el7.x86_64                                                                                                         2/2 
+
+Updated:
+  kmod-libs.x86_64 0:20-28.0.3.el7                                                                                                                   
+
+Complete!
