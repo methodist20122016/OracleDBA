@@ -1,4 +1,4 @@
-SQL> desc dba_roles
+SQL> desc dba_roles;
  Name                                      Null?    Type
  ----------------------------------------- -------- ----------------------------
  ROLE                                      NOT NULL VARCHAR2(128)
