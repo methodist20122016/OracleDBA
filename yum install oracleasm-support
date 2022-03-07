@@ -1,0 +1,868 @@
+[root@192 /]# yum install oracleasm-support
+Loaded plugins: langpacks, ulninfo
+Existing lock /var/run/yum.pid: another copy is running as pid 2705.
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:20 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:22 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:24 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:26 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:28 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:30 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:32 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:34 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:36 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:38 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:40 ago
+    State  : Running, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:42 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:44 ago
+    State  : Running, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:46 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:48 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:50 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:52 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:54 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:56 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 05:58 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:00 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:02 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:04 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:06 ago
+    State  : Running, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:08 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:10 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:12 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:14 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:16 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:18 ago
+    State  : Running, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:20 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:22 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:24 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:26 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:28 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:30 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:32 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:34 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:36 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:38 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:40 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:42 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:44 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:46 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:48 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:50 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:52 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:54 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:56 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 06:58 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:00 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:02 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:04 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:06 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:08 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:10 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:12 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:14 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:16 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:18 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:20 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:22 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:24 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:26 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:28 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:30 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:32 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:34 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:36 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:38 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:40 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:42 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:44 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:46 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:48 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:50 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:52 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:54 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:56 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 07:58 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:00 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:02 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:04 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:06 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:08 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:10 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:12 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:14 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:16 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:18 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:20 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:22 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:24 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:26 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:28 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:30 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:32 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:34 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:36 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:38 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:40 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:42 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:44 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:46 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:48 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:50 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:53 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:55 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:57 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 08:59 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:01 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:03 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:05 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:07 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:09 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:11 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:13 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:15 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:17 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:19 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:21 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:23 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:25 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:27 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:29 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:31 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:33 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:35 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:37 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:39 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:41 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:43 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:45 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:47 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:49 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:51 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:53 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:55 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:57 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 09:59 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:01 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:03 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:05 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:07 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:09 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:11 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:13 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:15 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:17 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:19 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:21 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:23 ago
+    State  : Running, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:25 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:27 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:29 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:31 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:33 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:35 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:37 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:39 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:41 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:43 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:45 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:47 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:49 ago
+    State  : Sleeping, pid: 2705
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: PackageKit
+    Memory : 311 M RSS (720 MB VSZ)
+    Started: Thu Mar  3 10:44:44 2022 - 10:51 ago
+    State  : Sleeping, pid: 2705
+Resolving Dependencies
+--> Running transaction check
+---> Package oracleasm-support.x86_64 0:2.1.11-2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=====================================================================================================================================================
+ Package                                  Arch                          Version                              Repository                         Size
+=====================================================================================================================================================
+Installing:
+ oracleasm-support                        x86_64                        2.1.11-2.el7                         ol7_latest                         85 k
+
+Transaction Summary
+=====================================================================================================================================================
+Install  1 Package
+
+Total download size: 85 k
+Installed size: 266 k
+Is this ok [y/d/N]: y
+Downloading packages:
+oracleasm-support-2.1.11-2.el7.x86_64.rpm                                                                                     |  85 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : oracleasm-support-2.1.11-2.el7.x86_64                                                                                             1/1 
+Note: Forwarding request to 'systemctl enable oracleasm.service'.
+Created symlink from /etc/systemd/system/multi-user.target.wants/oracleasm.service to /usr/lib/systemd/system/oracleasm.service.
+  Verifying  : oracleasm-support-2.1.11-2.el7.x86_64                                                                                             1/1 
+
+Installed:
+  oracleasm-support.x86_64 0:2.1.11-2.el7                                                                                                            
+
+Complete!
