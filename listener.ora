@@ -1,0 +1,9 @@
+[oracle@rdsdbsrvr81 ~]$ cd /u01/app/oracle/product/19c/network/admin/
+[oracle@rdsdbsrvr81 admin]$ ls
+listener.ora  samples  shrept.lst
+[oracle@rdsdbsrvr81 admin]$ vi listener.ora
+listener_rdsdb19 = (DESCRIPTION = (ADDRESS =(HOST=192.168.1.81)(PORT=1521)(PROTOCOL=TCP)))
+SID_LIST_listener_rdsdb19 = (SID_LIST =
+                                (SID_DESC =
+                                (ORACLE_HOME = /u01/app/oracle/product/19c)
+                                (SID_NAME = rdsdb19)
