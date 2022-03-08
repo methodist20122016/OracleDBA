@@ -99,12 +99,49 @@ Service "rdsdb19" has 1 instance(s).
 The command completed successfully
 
 ..........................................................................................................................
-lsnrctl service
+lsnrctl services & lsnrctl service
 ..........................................................................................................................
 
 [oracle@rdsdbsrvr81 ~]$ lsnrctl service
 
-LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-MAR-2022 12:55:28
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-MAR-2022 12:58:36
+
+Copyright (c) 1991, 2019, Oracle.  All rights reserved.
+
+Connecting to (ADDRESS=(PROTOCOL=tcp)(HOST=)(PORT=1521))
+Services Summary...
+Service "rdsdb19" has 2 instance(s).
+  Instance "rdsdb19", status UNKNOWN, has 1 handler(s) for this service...
+    Handler(s):
+      "DEDICATED" established:0 refused:0
+         LOCAL SERVER
+  Instance "rdsdb19", status READY, has 1 handler(s) for this service...
+    Handler(s):
+      "DEDICATED" established:2 refused:0 state:ready
+         LOCAL SERVER
+The command completed successfully
+[oracle@rdsdbsrvr81 ~]$ clear
+[oracle@rdsdbsrvr81 ~]$ lsnrctl service
+
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-MAR-2022 12:58:59
+
+Copyright (c) 1991, 2019, Oracle.  All rights reserved.
+
+Connecting to (ADDRESS=(PROTOCOL=tcp)(HOST=)(PORT=1521))
+Services Summary...
+Service "rdsdb19" has 2 instance(s).
+  Instance "rdsdb19", status UNKNOWN, has 1 handler(s) for this service...
+    Handler(s):
+      "DEDICATED" established:0 refused:0
+         LOCAL SERVER
+  Instance "rdsdb19", status READY, has 1 handler(s) for this service...
+    Handler(s):
+      "DEDICATED" established:2 refused:0 state:ready
+         LOCAL SERVER
+The command completed successfully
+[oracle@rdsdbsrvr81 ~]$ lsnrctl services
+
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-MAR-2022 12:59:01
 
 Copyright (c) 1991, 2019, Oracle.  All rights reserved.
 
