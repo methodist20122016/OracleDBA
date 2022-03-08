@@ -1,9 +1,267 @@
+Server 81
+.........................................................................................................................
 [oracle@rdsdbsrvr81 ~]$ cd /u01/app/oracle/product/19c/network/admin/
 [oracle@rdsdbsrvr81 admin]$ ls
 listener.ora  samples  shrept.lst
+
+
+
+
+
+..........................................................................................................................
+cd /u01/app/oracle/product/19c/network/admin/ >>>>>>>>> Create listener.ora File in this Location 
+..........................................................................................................................
 [oracle@rdsdbsrvr81 admin]$ vi listener.ora
 listener_rdsdb19 = (DESCRIPTION = (ADDRESS =(HOST=192.168.1.81)(PORT=1521)(PROTOCOL=TCP)))
 SID_LIST_listener_rdsdb19 = (SID_LIST =
                                 (SID_DESC =
                                 (ORACLE_HOME = /u01/app/oracle/product/19c)
                                 (SID_NAME = rdsdb19)
+
+
+
+
+..........................................................................................................................
+To Turn Off Firewall Connect to Root user
+..........................................................................................................................                                                            
+[root@rdsdbsrvr81 ~]# service firewalld status
+Redirecting to /bin/systemctl status  firewalld.service
+● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; enabled; vendor preset: enabled)
+   Active: inactive (dead) since Tue 2022-03-08 12:16:16 IST; 13s ago
+     Docs: man:firewalld(1)
+  Process: 813 ExecStart=/usr/sbin/firewalld --nofork --nopid $FIREWALLD_ARGS (code=exited, status=0/SUCCESS)
+ Main PID: 813 (code=exited, status=0/SUCCESS)
+
+Mar 08 12:11:22 rdsdbsrvr81.rds.com systemd[1]: Starting firewalld - dynamic fir....
+Mar 08 12:11:24 rdsdbsrvr81.rds.com systemd[1]: Started firewalld - dynamic fire....
+Mar 08 12:11:26 rdsdbsrvr81.rds.com firewalld[813]: ERROR: UNKNOWN_INTERFACE: 'e...e
+Mar 08 12:11:26 rdsdbsrvr81.rds.com firewalld[813]: ERROR: UNKNOWN_INTERFACE: 'e...e
+Mar 08 12:11:26 rdsdbsrvr81.rds.com firewalld[813]: ERROR: UNKNOWN_INTERFACE: 'e...e
+Mar 08 12:16:15 rdsdbsrvr81.rds.com systemd[1]: Stopping firewalld - dynamic fir....
+Mar 08 12:16:16 rdsdbsrvr81.rds.com systemd[1]: Stopped firewalld - dynamic fire....
+Hint: Some lines were ellipsized, use -l to show in full.
+
+
+[root@rdsdbsrvr81 ~]# su - oracle
+Last login: Tue Mar  8 12:12:34 IST 2022 from 192.168.1.10 on pts/0
+[oracle@rdsdbsrvr81 ~]$ clear
+
+
+
+
+
+..........................................................................................................................
+Correct Way to Start the Listener
+..........................................................................................................................
+
+[oracle@rdsdbsrvr81 ~]$ lsnrctl status listener_rdsdb19
+
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-MAR-2022 12:17:54
+
+Copyright (c) 1991, 2019, Oracle.  All rights reserved.
+
+Connecting to (DESCRIPTION=(ADDRESS=(HOST=192.168.1.81)(PORT=1521)(PROTOCOL=TCP)))
+TNS-12541: TNS:no listener
+ TNS-12560: TNS:protocol adapter error
+  TNS-00511: No listener
+   Linux Error: 111: Connection refused
+[oracle@rdsdbsrvr81 ~]$ lsnrctl start listener_rdsdb19
+
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-MAR-2022 12:18:07
+
+Copyright (c) 1991, 2019, Oracle.  All rights reserved.
+
+Starting /u01/app/oracle/product/19c/bin/tnslsnr: please wait...
+
+TNSLSNR for Linux: Version 19.0.0.0.0 - Production
+System parameter file is /u01/app/oracle/product/19c/network/admin/listener.ora
+Log messages written to /u01/app/oracle/diag/tnslsnr/rdsdbsrvr81/listener_rdsdb19/alert/log.xml
+Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=192.168.1.81)(PORT=1521)))
+
+Connecting to (DESCRIPTION=(ADDRESS=(HOST=192.168.1.81)(PORT=1521)(PROTOCOL=TCP)))
+STATUS of the LISTENER
+------------------------
+Alias                     listener_rdsdb19
+Version                   TNSLSNR for Linux: Version 19.0.0.0.0 - Production
+Start Date                08-MAR-2022 12:18:08
+Uptime                    0 days 0 hr. 0 min. 0 sec
+Trace Level               off
+Security                  ON: Local OS Authentication
+SNMP                      OFF
+Listener Parameter File   /u01/app/oracle/product/19c/network/admin/listener.ora
+Listener Log File         /u01/app/oracle/diag/tnslsnr/rdsdbsrvr81/listener_rdsdb19/alert/log.xml
+Listening Endpoints Summary...
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=192.168.1.81)(PORT=1521)))
+Services Summary...
+Service "rdsdb19" has 1 instance(s).
+  Instance "rdsdb19", status UNKNOWN, has 1 handler(s) for this service...
+The command completed successfully
+
+
+
+
+
+..........................................................................................................................
+Wrong Way to Start the Listener
+..........................................................................................................................
+[oracle@rdsdbsrvr81 ~]$ lsnrctl listener_rdsdb19 status
+bash: lsnrctl: command not found...
+[oracle@rdsdbsrvr81 ~]$ . oraenv
+ORACLE_SID = [oracle] ? rdsdb19
+The Oracle base has been set to /u01/app/oracle
+[oracle@rdsdbsrvr81 ~]$ echo $ORACLE_HOME
+/u01/app/oracle/product/19c
+[oracle@rdsdbsrvr81 ~]$ lsnrctl listener_rdsdb19 start
+
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-MAR-2022 12:17:37
+
+Copyright (c) 1991, 2019, Oracle.  All rights reserved.
+
+NL-00853: undefined command "listener_rdsdb19".  Try "help"
+
+
+
+
+..........................................................................................................................
+Connect to sqlplus
+..........................................................................................................................
+[oracle@rdsdbsrvr81 ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Tue Mar 8 12:24:08 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+..........................................................................................................................
+ERROR
+..........................................................................................................................
+SQL> select open_mode from v$database;
+select open_mode from v$database
+*
+ERROR at line 1:
+ORA-01034: ORACLE not available
+Process ID: 0
+Session ID: 0 Serial number: 0
+
+
+SQL> desc v$database;
+ERROR:
+ORA-01012: not logged on
+Process ID: 0
+Session ID: 0 Serial number: 0
+..........................................................................................................................
+ERROR
+..........................................................................................................................
+
+SQL> show user
+USER is "SYS"
+SQL> startup
+ORACLE instance started.
+
+Total System Global Area 1073737800 bytes
+Fixed Size                  8904776 bytes
+Variable Size             276824064 bytes
+Database Buffers          784334848 bytes
+Redo Buffers                3674112 bytes
+Database mounted.
+Database opened.
+SQL>
+
+
+SQL> select username from dba_users;
+
+USERNAME
+--------------------------------------------------------------------------------
+SYS
+SYSTEM
+XS$NULL
+SYSBACKUP
+SYSRAC
+SYSKM
+OUTLN
+SYS$UMF
+SYSDG
+DBSNMP
+APPQOSSYS
+
+USERNAME
+--------------------------------------------------------------------------------
+DBSFWUSER
+GGSYS
+ANONYMOUS
+GSMADMIN_INTERNAL
+XDB
+GSMCATUSER
+REMOTE_SCHEDULER_AGENT
+ABC82
+AUDSYS
+DIP
+ABC
+
+USERNAME
+--------------------------------------------------------------------------------
+ORACLE_OCM
+GSMUSER
+
+24 rows selected.
+
+
+SQL> conn abc/abc
+Connected.
+SQL> show user
+USER is "ABC"
+.........................................................................................................................
+Server 82
+.........................................................................................................................
+login as: oracle
+oracle@192.168.1.82's password:
+Last login: Tue Mar  8 12:39:33 2022 from 192.168.1.10
+
+
+[oracle@rdsdbsrvr82 ~]$ sqlplus abc/abc@192.168.1.81:1521/rdsdb19
+bash: sqlplus: command not found...
+
+
+[oracle@rdsdbsrvr82 ~]$ . oraenv
+ORACLE_SID = [oracle] ? rdsdb20
+The Oracle base has been set to /u01/app/oracle
+[oracle@rdsdbsrvr82 ~]$ sqlplus abc/abc@192.168.1.81:1521/rdsdb19
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Tue Mar 8 12:42:52 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Last Successful login time: Tue Mar 08 2022 12:42:17 +05:30
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+SQL> select * from tab;
+
+TNAME      TABTYPE     CLUSTERID
+---------- ---------- ----------
+EMP        TABLE
+
+SQL> show user
+USER is "ABC"
+SQL> select * from emp;
+
+       SNO NAME
+---------- ------------------------------
+         1 chaitanya
+         2 karthik
+         3 taha
+         4 sindhu
+         5 manikanta
+         6 praneeth
+         7 mani
+         8 jaishetty
+         9 sanju
+        11 pabba praneetha
+
+10 rows selected.
+
+
